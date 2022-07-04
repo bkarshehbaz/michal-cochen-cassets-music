@@ -77,6 +77,8 @@ export const StyledSlogan = styled.img`
   text-align: center;
   margin: 0 auto;
   display: block;
+  margin-bottom: 300px;
+  margin-top: 300px;
 `;
 
 export const StyledFlag = styled.img`
