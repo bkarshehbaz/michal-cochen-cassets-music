@@ -39,12 +39,12 @@ export const StyledYearsCube = styled.div`
 
 export const StyledYear = styled(Link)`
   position: absolute;
-  font-family: Cristyle;
+  font-family: Narkiss Text TRIAL;
   cursor: pointer;
   font-weight: 400;
   top: 20px;
   right: 3px;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 24px;
   transform: rotate(90deg);
   color: #e51c1f;

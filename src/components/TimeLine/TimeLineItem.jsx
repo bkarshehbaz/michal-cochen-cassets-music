@@ -29,8 +29,8 @@ const TimeLineItem = ({
         duration={500}
         spy={true}
         offset={-70}
-        onMouseEnter={() => setIsHoverText(true)}
-        onMouseLeave={() => setIsHoverText(false)}
+        // onMouseEnter={() => setIsHoverText(true)}
+        // onMouseLeave={() => setIsHoverText(false)}
       >
         {keyName}
       </StyledYear>
