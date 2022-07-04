@@ -43,7 +43,7 @@ export const StyledYear = styled(Link)`
   cursor: pointer;
   font-weight: 400;
   top: 20px;
-  right: 3px;
+  right: 14px;
   font-size: 18px;
   line-height: 24px;
   transform: rotate(90deg);
