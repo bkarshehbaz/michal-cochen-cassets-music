@@ -1,13 +1,16 @@
-import React, { useState, useContext, useEffect } from 'react'
-import { useParallax } from 'react-scroll-parallax'
-import { Context } from '../../Context'
-import { useInView } from 'react-intersection-observer'
+import React, { useState, useContext, useEffect } from "react";
+import { useParallax } from "react-scroll-parallax";
+import { Context } from "../../Context";
+import { useInView } from "react-intersection-observer";
 
-import tvPhoto from '../../utils/images/png/turningPoint/tv.png'
-import title_photo from '../../utils/images/png/turningPoint/title.png'
-import maskGroup1Photo from '../../utils/images/png/turningPoint/mask_group_1.png'
-import maskGroup2Photo from '../../utils/images/png/turningPoint/mask_group_2.png'
-import StaticTextBlocks from '../../components/StaticTextBlock'
+import tvPhoto from "../../utils/images/png/turningPoint/tv.png";
+import title_photo from "../../utils/images/png/turningPoint/title.png";
+import maskGroup1Photo from "../../utils/images/png/turningPoint/mask_group_1.png";
+import maskGroup2Photo from "../../utils/images/png/turningPoint/mask_group_2.png";
+
+import LeftImage from "../../utils/images/png/p1.png";
+import RightImage from "../../utils/images/png/p2 (2).png";
+import StaticTextBlocks from "../../components/StaticTextBlock";
 
 import {
   Year,
@@ -15,50 +18,61 @@ import {
   VideoWrapper,
   Title,
   Tv,
+  News1,
   TextWrapper,
   TvWrapper,
   TvVideo,
   MaskGroup1,
   MaskGroup2,
-} from './styled'
+  MaskGroup3,
+} from "./styled";
 
 const TurningPoint = () => {
-  const { dispatch } = useContext(Context)
-  const [isShowVideo, setIsShowVideo] = useState(null)
-  const { ref, inView } = useInView()
+  const { dispatch } = useContext(Context);
+  const [isShowVideo, setIsShowVideo] = useState(null);
+  const { ref, inView } = useInView();
 
-  const maskGroup1_paralax = useParallax({ speed: -15 })
-  const MaskGroup2_paralax = useParallax({ speed: 15 })
+  // const leftImage_paralax = useParallax({ speed: -5 });
+  // const rightImage_paralax = useParallax({ speed: 10 });
+
+  const maskGroup1_paralax = useParallax({ speed: -15 });
+  const MaskGroup2_paralax = useParallax({ speed: 15 });
+  // const MaskGroup3_paralax = useParallax({ speed: 25 });
 
   const showVideo = () => {
-    setIsShowVideo('https://www.youtube.com/watch?v=O54bWfplg9M&ab_channel=MichalCohen')
-  }
+    setIsShowVideo(
+      "https://www.youtube.com/watch?v=O54bWfplg9M&ab_channel=MichalCohen"
+    );
+  };
 
   const stopAudio = () => {
     return dispatch({
-      type: 'secondNameMusic',
+      type: "secondNameMusic",
       payload: {
-        nameMusic: 'וִידֵאוֹ',
-        musicPlaying: 'video',
+        nameMusic: "וִידֵאוֹ",
+        musicPlaying: "video",
       },
-    })
-  }
+    });
+  };
 
   useEffect(() => {
-    if(inView) showVideo()
-    else setIsShowVideo(null)
-  }, [inView])
+    if (inView) showVideo();
+    else setIsShowVideo(null);
+  }, [inView]);
 
   return (
     <Wrapper ref={ref}>
       <Year>1982</Year>
       <Title src={title_photo} />
       <MaskGroup1 ref={maskGroup1_paralax.ref} src={maskGroup1Photo} />
+      <img alt="adsfsd" className="blocks" src={LeftImage} />
+      {/* <News1 src={LeftImage} />
+      <News1 src={RightImage} /> */}
       <VideoWrapper>
         <TvWrapper
           onClick={() => {
-            showVideo()
-            stopAudio()
+            showVideo();
+            stopAudio();
           }}
         >
           <Tv src={tvPhoto} alt="TV" />
@@ -86,7 +100,7 @@ const TurningPoint = () => {
         />
       </TextWrapper>
     </Wrapper>
-  )
-}
+  );
+};
 
-export default TurningPoint
+export default TurningPoint;

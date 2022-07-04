@@ -8,3 +8,24 @@
 }
 
 
+a.active{
+    content: "";
+background-image: url("./timebar\ line.png");
+transform: rotate(0deg);
+width: 100px;
+height: 100px;
+background-repeat: no-repeat !important;
+background-size: contain;
+margin-top: -33px;
+}
+.logoImage.active{
+    background-image:none;
+    margin-top: 60px;
+}
+
+.line{
+    width: 13px;
+    border-top: 1px solid red;
+    right: 76%;
+    position: absolute;
+}

@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import ReactPlayer from 'react-player'
+import styled from "styled-components";
+import ReactPlayer from "react-player";
 
 export const Wrapper = styled.div`
   position: relative;
@@ -9,14 +9,14 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+`;
 
 export const VideoWrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+`;
 
 export const Year = styled.p`
   position: absolute;
@@ -31,7 +31,7 @@ export const Year = styled.p`
   top: 100px;
   right: 200px;
   z-index: 10;
-`
+`;
 
 export const Title = styled.img`
   position: absolute;
@@ -41,24 +41,31 @@ export const Title = styled.img`
   width: 899px;
   height: 421px;
   transform: translate(50%, 0%);
-`
+`;
 
 export const MaskGroup1 = styled.img`
   position: absolute;
   top: 220px;
   right: 0;
-`
+`;
 export const MaskGroup2 = styled.img`
   position: absolute;
   z-index: -1;
   bottom: 310px;
   left: 0;
-`
+`;
+
+export const MaskGroup3 = styled.img`
+  position: absolute;
+  z-index: -1;
+  bottom: 310px;
+  left: 0;
+`;
 
 export const Tv = styled.img`
   width: 100%;
   height: 100%;
-`
+`;
 
 export const TvWrapper = styled.div`
   cursor: pointer;
@@ -66,7 +73,7 @@ export const TvWrapper = styled.div`
   width: 1493px;
   height: 1125px;
   overflow: hidden;
-`
+`;
 
 export const TvVideo = styled(ReactPlayer)`
   width: 102% !important;
@@ -75,8 +82,29 @@ export const TvVideo = styled(ReactPlayer)`
   top: 0;
   left: 0;
   z-index: 5;
-`
+`;
 
 export const TextWrapper = styled.div`
   margin: 250px 0 300px;
-`
+`;
+
+export const News1 = styled.img`
+  position: absolute;
+  top: -200px;
+  left: 0;
+`;
+
+export const News2 = styled.img`
+  width: 100%;
+  position: absolute;
+  bottom: -340px;
+  left: 0;
+  z-index: 2;
+`;
+
+export const News3 = styled.img`
+  position: absolute;
+  bottom: -240px;
+  left: -5px;
+  z-index: 1;
+`;
