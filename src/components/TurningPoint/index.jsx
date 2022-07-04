@@ -65,7 +65,7 @@ const TurningPoint = () => {
       <Year>1982</Year>
       <Title src={title_photo} />
       <MaskGroup1 ref={maskGroup1_paralax.ref} src={maskGroup1Photo} />
-      <img alt="adsfsd" className="blocks" src={LeftImage} />
+
       {/* <News1 src={LeftImage} />
       <News1 src={RightImage} /> */}
       <VideoWrapper>
