@@ -13,12 +13,7 @@ const App = () => {
     <Context.Provider value={{ state, dispatch }}>
       <ParallaxProvider>
         <div className="App">
-          {/* <Landing /> */}
-          <h1>
-            Can you send Whatsapp text on +92 340 6246 267 if you don't have
-            whatsapp email me at Bkarshehbaz@gmail.com I'm waiting ...... Just
-            text me and i will explain things there
-          </h1>
+          <Landing />
         </div>
       </ParallaxProvider>
     </Context.Provider>
