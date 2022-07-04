@@ -34,7 +34,7 @@ export const StyledContentYear = styled(StyledYear)`
   z-index: 1;
   top: 0;
   right: 12%;
-  font-family: crystal;
+  font-family: Cristyle;
   @media (min-width: 1920px;) {
     top: 0;
     right: 8%;

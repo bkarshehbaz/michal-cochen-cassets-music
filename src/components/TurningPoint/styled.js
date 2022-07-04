@@ -20,7 +20,7 @@ export const VideoWrapper = styled.div`
 
 export const Year = styled.p`
   position: absolute;
-  font-family: crystal;
+  font-family: Cristyle;
   font-style: normal;
   font-weight: normal;
   font-size: 92px;
