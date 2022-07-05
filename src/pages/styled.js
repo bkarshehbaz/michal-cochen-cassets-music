@@ -34,8 +34,8 @@ export const ArisSunPhoto = styled.img`
 `;
 
 export const NaturalSelectionWrapper = styled.div`
-  margin: 250px 0 0;
-  padding: 200px 0 0px 40px;
+  margin: 250px 0 0px -30px;
+  padding: 200px 0 0px 0px;
   background-image: url(${choice_2}), url(${choice_3});
   background-repeat: no-repeat, no-repeat;
   width: 100%;

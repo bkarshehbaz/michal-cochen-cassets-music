@@ -7,16 +7,17 @@
     overflow: hidden;
 }
 
-
-a.active{
+a.active {
     content: "";
-background-image: url("./timebar\ line.png");
-transform: rotate(0deg);
-width: 100px;
-height: 100px;
-background-repeat: no-repeat !important;
-background-size: contain;
-margin-top: -33px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcQAAACUCAYAAAANpllcAAAACXBIWXMAAC4jAAAuIwF4pT92AAAC9UlEQVR4nO3YsW0UUBRE0QFtSANEuANvB1AKJdABpgOX4FKgA+jA2aYEmxuhIbAsF7DsnFPB+09futJ78/T0FABYdzifjndJvq4vAoBp396ubwAA/hJEAOZFEAGgDq/s4VeSL/YDwBW7T3L7/HmvBfH3u/c/v/sFAFyr8+n4++XTnEwBmBdBBIASRADmRRABoAQRgHkRRAAoQQRgXgQRAEoQAZgXQQSAEkQA5kUQAaAEEYB5EUQAKEEEYF4EEQBKEAGYF0EEgBJEAOZFEAGgBBGAeRFEAChBBGBeBBEAShABmBdBBIASRADmRRABoAQRgHkRRAAoQQRgXgQRAEoQAZgXQQSAEkQA5kUQAaAEEYB5EUQAKEEEYF4EEQBKEAGYF0EEgBJEAOZFEAGgBBGAeRFEAChBBGBeBBEAShABmBdBBIASRADmRRABoA7Xsofz6Xif5HgBowBw+W5fTng1QfwXw48XMAcA/yEnUwDmRRABoAQRgHkRRAAoQQRgXgQRAEoQAZgXQQSAEkQA5kUQAaAEEYB5EUQAKEEEYF4EEQBKEAGYF0EEgBJEAOZFEAGgBBGAeRFEAChBBGBeBBEAShABmBdBBIASRADmRRABoAQRgHkRRACowxXt4SHJ9wuYA4DL9znJh+dTXk0Q373/+XABYwDwHzifjp9eBtHJFIB5EUQAKEEEYF4EEQBKEAGYF0EEgBJEAOZFEAGgBBGAeRFEAChBBGBeBBEAShABmBdBBIASRADmRRABoAQRgHkRRAAoQQRgXgQRAEoQAZgXQQSAEkQA5kUQAaAEEYB5EUQAKEEEYF4EEQBKEAGYF0EEgBJEAOZFEAGgBBGAeRFEAChBBGBeBBEAShABmBdBBIASRADmRRABoAQRgHkRRAAoQQRgXgQRAEoQAZgXQQSAEkQA5kUQAaAEEYB5EUQAKEEEYF4EEQDq8Moebs6n4539AHDFbl4+7bUgfkjy1S8AYImTKQDzIogAUH9Ppo9JftgHALOSxz8LSB6VYsQGVQAAAABJRU5ErkJggg==);
+    transform: rotate(0deg);
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat !important;
+    background-size: contain;
+    margin-top: -32px;
+    right: 1px;
+    padding-right: 4px;
 }
 .logoImage.active{
     background-image:none;
@@ -28,4 +29,8 @@ margin-top: -33px;
     border-top: 1px solid red;
     right: 76%;
     position: absolute;
+}
+
+.wrapper-big{
+    background-image: url("../public/מהפך\ מוזיקלי1.png");
 }

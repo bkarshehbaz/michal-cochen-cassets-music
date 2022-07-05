@@ -37,7 +37,7 @@ const Disco = () => {
   }, []);
 
   return (
-    <StyledContentWrapper>
+    <StyledContentWrapper className="wrapper-big">
       <StyledDiscoWrapper ref={discoContainerRef}>
         <StyledTitleWrapper>
           <StyledTableYear>1995</StyledTableYear>
