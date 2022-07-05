@@ -78,10 +78,11 @@ const TurningPoint = () => {
           <Tv src={tvPhoto} alt="TV" />
           {isShowVideo && (
             <TvVideo
-              volume={0}
+              muted={false}
               onClick={(e) => e.stopPropagation()}
               url={isShowVideo}
               playing={true}
+              mute={false}
               onEnded={() => setIsShowVideo(null)}
               config={{
                 youtube: {

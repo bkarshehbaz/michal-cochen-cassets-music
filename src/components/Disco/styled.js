@@ -1,12 +1,12 @@
-import styled from 'styled-components'
-import { StyledYear } from '../../pages/styled'
+import styled from "styled-components";
+import { StyledYear } from "../../pages/styled";
 
 export const StyledContentWrapper = styled.div`
   overscroll-behavior: none;
   position: relative;
   overflow: hidden;
   width: 100vw;
-`
+`;
 
 export const StyledDiscoWrapper = styled.div`
   position: relative;
@@ -21,7 +21,7 @@ export const StyledDiscoWrapper = styled.div`
   @media (min-width: 2050px) {
     transform: translateX(-44.5%);
   }
-`
+`;
 
 export const StyledDiscoBackground = styled.img`
   position: absolute;
@@ -30,34 +30,34 @@ export const StyledDiscoBackground = styled.img`
   height: 100vh;
   right: 0;
   z-index: 1;
-`
+`;
 
 export const StyledDiscs = styled.img`
   position: absolute;
   top: 0;
   right: 0;
   z-index: 3;
-`
+`;
 
 export const StyledTitleWrapper = styled.div`
   position: absolute;
   top: 140px;
   right: 220px;
   z-index: 5;
-`
+`;
 
 export const StyledTableYear = styled(StyledYear)`
   position: absolute;
   top: -95px;
   right: 10px;
-  font-family: 'Narkiss Text TRIAL';
+  font-family: Cristyle;
   color: #000000;
-`
+`;
 
 export const StyledTitle = styled.img`
   width: 1500px;
   height: 700px;
-`
+`;
 
 export const StyledText = styled.div`
   position: absolute;
@@ -74,10 +74,10 @@ export const StyledText = styled.div`
   @media (min-width: 1920px) {
     top: 440px;
   }
-`
+`;
 
 export const StyledTopImage = styled.img`
   position: absolute;
   top: 0;
   right: 0;
-`
+`;

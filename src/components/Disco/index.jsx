@@ -1,10 +1,10 @@
-import React, { useRef, useEffect } from 'react'
-import gsap from 'gsap'
+import React, { useRef, useEffect } from "react";
+import gsap from "gsap";
 
-import backgroundImage from '../../utils/images/png/discoImage.png'
+import backgroundImage from "../../utils/images/png/discoImage.png";
 // import discsImage from '../../utils/images/png/disks.png'
-import discoTitle from '../../utils/images/png/discoTitle.png'
-import topDiscoImage from '../../utils/images/png/topDiscoImage.png'
+import discoTitle from "../../utils/images/png/discoTitle.png";
+import topDiscoImage from "../../utils/images/png/topDiscoImage.png";
 
 import {
   StyledContentWrapper,
@@ -16,25 +16,25 @@ import {
   StyledTableYear,
   StyledTitleWrapper,
   StyledTopImage,
-} from './styled'
+} from "./styled";
 
 const Disco = () => {
-  const discoContainerRef = useRef(null)
+  const discoContainerRef = useRef(null);
 
   useEffect(() => {
-    const disco = discoContainerRef.current
+    const disco = discoContainerRef.current;
     gsap.to(disco, {
       xPercent: 49.5,
-      ease: 'none',
+      ease: "none",
       scrollTrigger: {
         trigger: disco,
         pin: true,
         scrub: 1,
         snap: false,
-        end: 'bottom',
+        end: "bottom",
       },
-    })
-  }, [])
+    });
+  }, []);
 
   return (
     <StyledContentWrapper>
@@ -57,7 +57,7 @@ const Disco = () => {
         </StyledText>
       </StyledDiscoWrapper>
     </StyledContentWrapper>
-  )
-}
+  );
+};
 
-export default Disco
+export default Disco;
